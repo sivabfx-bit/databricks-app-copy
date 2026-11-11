@@ -4,6 +4,7 @@ import pandas as pd
 
 from utils.database import query_table
 from utils.ui import apply_theme, page_header, render_header
+from utils.ui import apply_theme, render_header
 
 st.set_page_config(
     page_title="Maintenance Analytics",
