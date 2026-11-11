@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 
 from utils.database import query_table
+from utils.ui import apply_theme, page_header, render_header
 from utils.ui import apply_theme, render_header
 
 st.set_page_config(
@@ -13,6 +14,12 @@ st.set_page_config(
 
 apply_theme()
 render_header("Maintenance")
+
+page_header(
+    "Maintenance Analytics",
+    "Work-order status, maintenance cost and completion performance.",
+    eyebrow="Maintenance",
+)
 
 #st.title("🔧 Maintenance Analytics")
 #st.caption("Work-order status, maintenance costs and completion performance")

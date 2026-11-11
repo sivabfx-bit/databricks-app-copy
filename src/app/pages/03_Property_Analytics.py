@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 
 from utils.database import query_table
+from utils.ui import apply_theme, page_header, render_header
 from utils.ui import apply_theme, render_header
 
 st.set_page_config(
@@ -14,6 +15,12 @@ st.set_page_config(
 
 apply_theme()
 render_header("Properties")
+
+page_header(
+    "Property Analytics",
+    "Property-level performance, rankings and occupancy across filters.",
+    eyebrow="Properties",
+)
 
 #st.title("Property Analytics")
 #st.caption("Property-level performance and investment insights")

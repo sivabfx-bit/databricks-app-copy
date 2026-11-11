@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 
 from utils.database import query_table
+from utils.ui import apply_theme, page_header, render_header
 from utils.ui import apply_theme, render_header
 
 st.set_page_config(
@@ -14,6 +15,12 @@ st.set_page_config(
 
 apply_theme()
 render_header("Markets")
+
+page_header(
+    "Market Analytics",
+    "Compare occupancy, revenue, NOI and operating expenses across markets.",
+    eyebrow="Markets",
+)
 
 #st.title("Market Analytics")
 #st.caption("Compare residential property performance across markets")
